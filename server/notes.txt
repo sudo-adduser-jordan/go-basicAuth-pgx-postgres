@@ -1,0 +1,16 @@
+docker run `
+    -p 5432:5432 -d `
+    --name postgres-container `
+    -e POSTGRES_USER=dbuser  `
+    -e POSTGRES_PASSWORD=dbpassword `
+    -e POSTGRES_DB=dbname `
+    postgres `
+    
+
+go build cmd/main.go; `
+start "C:/Users/user1/AppData/Local/Programs/pgAdmin 4/v7/runtime/pgadmin4.exe"; `
+./main.exe
+
+    
+go build cmd/main.go; `
+./main.exe 
