@@ -19,7 +19,7 @@ func SetupRoutes() {
 	mux.HandleFunc("/delete", middleware.Logger((middleware.BasicAuth(handlers.Delete))))
 
 	server := &http.Server{
-		Addr:    ":8080",
+		Addr:    ":3000",
 		Handler: mux,
 		// IdleTimeout:  time.Minute,
 		// ReadTimeout:  10 * time.Second,

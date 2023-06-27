@@ -16,6 +16,17 @@ var connection *pgxpool.Pool
 func ConnectToDatabase() {
 
 	// "postgres://username:password@localhost:5432/database_name"
+	// DATABASE_URL := fmt.Sprintf(
+	// 	"postgres://%s:%s@%s:%s/%s",
+	// 	configs.Env("DB_USER"),
+	// 	configs.Env("DB_PASSWORD"),
+	// 	configs.Env("DB_HOST"),
+	// 	configs.Env("DB_PORT"),
+	// 	configs.Env("DB_NAME"),
+	// )
+
+	// Docker Compose
+	// "postgres://username:password@database:5432/database_name"
 	DATABASE_URL := fmt.Sprintf(
 		"postgres://%s:%s@%s:%s/%s",
 		configs.Env("DB_USER"),

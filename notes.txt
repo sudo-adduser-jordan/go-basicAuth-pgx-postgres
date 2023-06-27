@@ -5,6 +5,8 @@ docker run `
     -e POSTGRES_PASSWORD=dbpassword `
     -e POSTGRES_DB=dbname `
     postgres `
+
+docker compose up
     
 
 go build cmd/main.go; `
